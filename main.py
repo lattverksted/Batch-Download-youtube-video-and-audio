@@ -86,18 +86,6 @@ class ytDownloader:
 file1 = open('links.txt', 'r')
 links = file1.readlines()
 
-######### single thread
-"""print("######### single thread ##################")
-
-start = time.perf_counter()
-for link in links :
-    downloader = ytDownloader(link, output_path, type )
-    downloader.run()
-finish = time.perf_counter()
-
-print(f'DONE in {finish - start} secs' )"""
-
-
 
 ######### multithreading
 print("######### multi threading ##################")
